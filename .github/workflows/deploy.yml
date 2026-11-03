@@ -2,7 +2,7 @@ name: Deploy Vite to Pages
 
 on:
   push:
-    branches: ["Principal"]
+    branches: ["main", "Principal"]
 
 permissions:
   contents: read
@@ -44,4 +44,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
